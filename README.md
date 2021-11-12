@@ -1,5 +1,11 @@
 ![App Brewery Banner](Documentation/AppBreweryBanner.png)
 
+## Projeto desenvolvido durante o curso swift bootcamp da App Brewery's ##
+
+## ##
+
+## Proposta : ##
+
 # Magic 8 Ball
 
 ## Our Goal

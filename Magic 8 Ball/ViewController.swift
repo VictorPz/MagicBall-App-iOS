@@ -1,18 +1,20 @@
-//
-//  ViewController.swift
-//  Magic 8 Ball
-//
-//  Created by Angela Yu on 14/06/2019.
-//  Copyright © 2019 The App Brewery. All rights reserved.
-//
 
 import UIKit
 
 class ViewController: UIViewController {
     
-    let ballArray = [#imageLiteral(resourceName: "ball1.png"),#imageLiteral(resourceName: "ball2.png"),#imageLiteral(resourceName: "ball3.png"),#imageLiteral(resourceName: "ball4.png"),#imageLiteral(resourceName: "ball5.png")]
-
-
-
+    //MARK: -Atributos
+    
+        let answers = ["Yes", "No", "Ask Again Later", "Definitely Yes", "I have no ideia"]
+  
+    //MARK: -IBOutlets
+    @IBOutlet weak var lbResult: UILabel!
+    
+    //MARK: -Life Cycle
+    
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+         if motion == .motionShake {
+            lbResult.text = answers.randomElement()
+        }
+    }
 }
-
